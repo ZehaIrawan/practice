@@ -35,7 +35,8 @@ go get modernc.org/sqlite
 # install package and add it to dependency, like npm install
 ```
 
-Next: 
+[SQLC SQLite](https://docs.sqlc.dev/en/latest/tutorials/getting-started-sqlite.html)
+
 1. Configure `sqlc.yaml`
 
 ```bash
@@ -65,4 +66,8 @@ sudo snap install sqlc
 sqlc generate
 ```
 
-4. 
+```bash
+curl -X POST localhost:8080/todos \
+  -H "Content-Type: application/json" \
+  -d '{"description":"Learn Go CRUD"}'
+```
