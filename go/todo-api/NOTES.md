@@ -36,6 +36,33 @@ go get modernc.org/sqlite
 ```
 
 Next: 
-1. Configure sqlc.yaml
+1. Configure `sqlc.yaml`
+
+```bash
+version: "2"
+sql:
+  - engine: "sqlite"
+    queries: "query.sql"
+    schema: "schema.sql"
+    gen:
+      go:
+        package: "tutorial"
+        out: "tutorial"
+```
+
+
 2. Write Schema and Queries
+
+`schema.sql`
+
+`query.sql`
+
 3. Compile SQL into Go code
+
+```bash
+sudo snap install sqlc
+
+sqlc generate
+```
+
+4. 
